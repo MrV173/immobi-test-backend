@@ -1,0 +1,21 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJpYm51IiwiZW1haWwiOiJpYm51QGdtYWlsLmNvbSIsImlhdCI6MTcwMTI2NjgxOCwiZXhwIjoxNzAxMjY2ODQ4fQ.G1h88tvQQr7zmrsP4gw4AtwSKr5fmXhR34NHdgRBljI
+
+
+
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email" : "ibnu@gmail.com",
+    "password" : "1234"
+}
+
+###
+GET http://localhost:5000/token
+
+
+###
+DELETE  http://localhost:5000/logout
